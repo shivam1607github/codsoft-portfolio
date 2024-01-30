@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<style>
+    span{
+        color: rgb(226, 77, 77);
+    }
+    body{
+        background-image: url(./white-digital-matrix-binary-code-numbers-background_1017-25332\ \(1\).avif);
+         ;
+    }
+    .cv a{
+        
+        padding: 16px 35px;
+        text-decoration: none;
+        border: rgb(0, 0, 0) 1px solid;
+        border-radius: 35px;
+        letter-spacing: 2px;
+        color: #a80e0e;
+        position: absolute;
+        margin: 1% 3%;
+
+    }
+    .cv a:hover{
+        background-color: #56cf3d;
+    }
+</style>
+<body>
+
+    
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fdeer-antlers-transparent&psig=AOvVaw3-GSm_gpq41bbIyL-L4neu&ust=1706632300357000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiwgvuCg4QDFQAAAAAdAAAAABAJ"><span>Shivam</span> Pandey</a>
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="http://127.0.0.1:5503/index.html#"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="http://127.0.0.1:3006/about me.html" style="--navAni:2">About</a></li>
+                    <li><a href="http://127.0.0.1:3006/skill.html" style="--navAni:3">Skills</a></li>
+                    <li><a href="http://127.0.0.1:3006/portfoliobio.html" style="--navAni:4">Portfolio</a></li>
+                    <li><a href="http://127.0.0.1:3006/contact.html" style="--navAni:5">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="main">
+                <div class="detail">
+                    <h3>Hi, I'm</h3>
+                    <h1><span style="color:#52489C;">Shivam</span> Pandey</h1> 
+                    <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients.
+                        
+                    </p>  
+                    <div class="social">
+                        <a href="https://www.linkedin.com/public-profile/settings" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/shivampandey309/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/shivam1607github" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/@Web_Devs__" style="--socialAni:4"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                    <div class="cv">
+                        <a href="./resume2.pdf"><b>Download-CV</b></a>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./WhatsApp_Image_2024-01-28_at_16.51.17_4e2bdc99-removebg-preview (1).png"  class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
